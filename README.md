@@ -10,7 +10,7 @@ Build command: *(empty)* · Publish directory: `.`
 
 **Render:** *New → Static Site* → pick the repo.
 Build command: *(empty)* · Publish directory: `.` (or use `render.yaml` as a Blueprint).
-Social previews use `assets/site-preview.webp` (1200 × 630). If you use a custom domain, update the absolute `og:url`, `og:image`, and `twitter:image` URLs in `index.html`.
+Social previews use `assets/site-preview.webp` (1200 × 630). The default Render hostname is `https://swift-strips-org-chart.onrender.com/`; update the absolute `og:url`, `og:image`, and `twitter:image` URLs in `index.html` if you use a custom domain.
 
 ## Run locally
     python3 -m http.server 8080   # then open http://localhost:8080

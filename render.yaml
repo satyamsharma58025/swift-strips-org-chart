@@ -1,5 +1,5 @@
 services:
   - type: web
-    name: swift-strips-orgchart
+    name: swift-strips-org-chart
     runtime: static
     staticPublishPath: .
