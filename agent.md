@@ -26,6 +26,7 @@ The user is a demanding design reviewer. They asked for the work to be done "as 
 ```
 index.html            # entire app: CSS + HTML + JS (single file, no framework)
 assets/logo.png       # circular, transparent-corner logo (256px). Also inlined as base64 in index.html (const LOGO)
+assets/site-preview.webp # 1200x630 screenshot used by Open Graph and Twitter link previews
 vendor/jspdf.umd.min.js   # jsPDF 2.5.1 (MIT), loaded locally for PDF export
 vendor/jspdf-LICENSE.txt
 netlify.toml          # publish "." + security headers
