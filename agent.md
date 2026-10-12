@@ -106,7 +106,7 @@ Pan/zoom: custom `#world` CSS transform; pointer events (drag, two-finger pinch)
 ### 4.4 State, history, persistence
 - Undo/redo: JSON snapshots (`pushUndo`, max 120). `mutate()` for structural changes, `live()` for coalesced text typing.
 - Persistence: always `localStorage` (`ssi-orgchart-v1`). If the Claude artifact runtime `db` capability exists, also syncs doc `charts/org` (`{json, by, at}`), ignoring own echoes. **On a plain static host only localStorage applies** (per browser). To make edits shared for everyone, change `SEED` in the file, or add a backend (see section 9).
-- Theme: `data-theme` on `<html>` overrides `prefers-color-scheme`; remembered in localStorage.
+- Theme: the document starts with `data-theme="light"` on every load, regardless of OS or stored browser state. The toggle switches themes for the current page session only.
 
 ### 4.5 Export
 - **PDF:** `pdfChart(format, includeCollapsed)` draws vector primitives with jsPDF directly (not a screenshot): header with logo + serif company name + tagline, legend, department panels, wires, cards, footer. A4/A3/A2 landscape, scaled to fit. Uses `helvetica` and `times` built-ins.
